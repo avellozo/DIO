@@ -3,16 +3,16 @@ DIO Projects
 
 #Cognizant EMR
 
-The MRJob package take long times to run a step, because this I had to create a pool cluster with long idle time.
+The MRJob package takes a long time to run a step, so I had to create a pool cluster with long idle time.
 This pool cluster creation was defined in the mrjob.conf file.
-Because this long time, I used the spot instances in the cluster to save money.
+Because of this long time to execute, I used the spot instances in the cluster to save money.
 
 ##Running
 Run the file using the following parameters:
 -r emr s3://<Your bucket>/data/sherlock.txt --output-dir=s3://<Your bucket>/output/logs
 --cloud-tmp-dir=s3://<Your bucket>/temp/
 
-set the environment variable MRJOB_CONF=./mrjob.conf (or where is your confguration file)
+set the environment variable MRJOB_CONF=./mrjob.conf (or where is your configuration file)
 
 ## Output files
 
